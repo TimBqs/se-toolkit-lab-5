@@ -34,13 +34,9 @@ A senior engineer explains your next assignment:
 
 Read the tasks and complete them by yourself.
 
-When stuck or not sure, ask an LLM:
+When stuck or not sure, ask the [AI coding agent](./wiki/coding-agents.md#what-is-a-coding-agent).
 
-> Give me directions on how to solve this task. I want to maximize learning.
-
-> Why is this task important? What exactly do I need to do?
-
-Provide enough context by giving it the whole file, not one or two lines. Ideally pass the setup file too.
+Use appropriate [prompts](./wiki/lab.md#prompts-for-coding-agents).
 
 Remember: Use the LLM to enhance your understanding, not replace it.
 

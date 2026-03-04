@@ -134,7 +134,7 @@ Complete these steps:
 
 1. Open the file [`frontend/src/App.tsx`](../../../frontend/src/App.tsx) ([how to open a file](../../../wiki/vs-code.md#open-the-file)).
 
-2. Fix the redundancy (it's already clear that it's the `Items` table):
+2. Fix the redundancy (it's already clear that it's the `Items` table). Replace:
 
    ```tsx
    <th>ItemType</th>

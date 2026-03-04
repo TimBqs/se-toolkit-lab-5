@@ -22,12 +22,12 @@
   - [Listen on a port](#listen-on-a-port)
 - [`Wi-Fi`](#wi-fi)
   - [`Wi-Fi` network](#wi-fi-network)
-- [CDN](#cdn)
-- [Reverse proxy](#reverse-proxy)
-  - [Forward request](#forward-request)
 - [URL](#url)
   - [Components of a URL](#components-of-a-url)
   - [URL example](#url-example)
+- [CDN](#cdn)
+- [Reverse proxy](#reverse-proxy)
+  - [Forward request](#forward-request)
 - [Troubleshooting](#troubleshooting)
   - [Service is running but a request fails](#service-is-running-but-a-request-fails)
 
@@ -205,13 +205,23 @@ A `CDN` (`Content Delivery Network`) is a network of distributed servers that de
 
 ## Reverse proxy
 
-A reverse proxy is a server that sits in front of a backend [service](./api.md#service) and forwards incoming client requests to it.
+A reverse proxy is a server that sits in front of a backend [service](./api.md#service) and [forwards](#forward-request) incoming [client](./http.md#web-client) requests to it.
 
-<!-- TODO update -->
+The client communicates only with the reverse proxy — it does not connect to the backend directly. The reverse proxy passes the request to the backend, receives the response, and returns it to the client.
+
+Common uses:
+
+- **Routing:** direct requests to the appropriate backend service based on the request path.
+- **Serving static files:** serve front-end assets directly without involving the backend.
+- **Port management:** expose a single [port](#port) to clients while backend services run on separate internal ports.
+
+Example: [`Caddy`](./caddy.md#what-is-caddy) is the reverse proxy in this project.
 
 ### Forward request
 
-<!-- TODO add section content -->
+To forward a request, a [reverse proxy](#reverse-proxy) takes an incoming [`HTTP`](./http.md#what-is-http) request from a [client](./http.md#web-client), sends it to a backend [service](./api.md#service), and returns the backend's response to the client.
+
+Example: in this project, [`Caddy`](./caddy.md#what-is-caddy) is configured to [forward API requests](./caddy.md#caddy-forwards-requests-to-backend) to the backend service ([`app` service](./docker-compose-yml.md#app-service)).
 
 ## Troubleshooting
 

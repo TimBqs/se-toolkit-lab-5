@@ -25,7 +25,7 @@ Databases store data in structures such as tables (rows and columns).
 
 A database server is software that manages one or more databases and handles queries from clients (applications).
 
-Examples of database servers: [`PostgreSQL`](./postgresql.md#what-is-postgresql), `MySQL`, `SQLite`.
+Examples of database servers: [`PostgreSQL`](./postgresql.md#postgresql-server), `MySQL`, `SQLite`.
 
 ## `PostgreSQL`
 

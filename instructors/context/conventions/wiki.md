@@ -52,6 +52,7 @@ Docs:
 - Start every wiki file with a `## What is <tool or concept>` section that defines the tool/concept in 1–3 sentences and includes a link to official docs. The heading may use natural phrasing (articles, singular/plural) that differs from the H1 title — e.g., `# Computer Networks` → `## What is a computer network`.
 - Provide both explanation and how-to instructions.
 - Link to other wiki sections whenever a concept appears for the first time in a section (see [Links and cross-references](./common.md#48-links-and-cross-references)).
+- **Connect the dots.** Wiki files are often read in isolation — readers jump in from a task link. Don't just define a concept; situate it. Use cross-links and connecting wording (e.g., `` `X` works together with `Y` to… ``, `` When using `Z`, you will also need… ``) to help readers understand how concepts relate to each other and to the broader system.
 - Use `<h2>Table of contents</h2>` (HTML) so the ToC heading itself doesn't appear in the auto-generated ToC.
 - When an operation can be done multiple ways, list them as options: "Use any of the following methods:"
 - These wiki files must stay in sync with their corresponding source files — variable names, default values, and grouping must match:
