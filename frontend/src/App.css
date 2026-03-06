@@ -59,3 +59,85 @@ tr:nth-child(even) {
   padding: 0.25rem 0.75rem;
   font-size: 0.85rem;
 }
+
+.app-header nav {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.app-header nav button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  background: #f5f5f5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.app-header nav button:hover:not(:disabled) {
+  background: #e5e5e5;
+}
+
+.app-header nav button:disabled {
+  background: #4a90d9;
+  color: white;
+  border-color: #4a90d9;
+  cursor: default;
+}
+
+/* Dashboard styles */
+
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboard h1 {
+  margin-bottom: 1.5rem;
+}
+
+.lab-selector {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.lab-selector label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.lab-selector select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 150px;
+}
+
+.chart-section,
+.table-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart-section h2,
+.table-section h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.table-section table {
+  width: 100%;
+}
+
+.table-section th {
+  background: #4a90d9;
+  color: white;
+}
